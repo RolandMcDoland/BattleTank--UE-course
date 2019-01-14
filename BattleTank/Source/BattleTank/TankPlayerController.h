@@ -20,6 +20,7 @@ class BATTLETANK_API ATankPlayerController : public APlayerController
 
 		void BeginPlay() override;
 	
+		void Tick(float DeltaTime) override;
 	
-	
+		void AimTowardsCrosshair();
 };
