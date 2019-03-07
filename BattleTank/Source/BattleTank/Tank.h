@@ -25,6 +25,10 @@ private:
 
 	UTankBarrel *Barrel = nullptr;
 
+	float ReloadTime = 3.0f;
+
+	double LastFireTime = 0;
+
 public:
 	// Sets default values for this pawn's properties
 	ATank();
