@@ -17,15 +17,16 @@ class BATTLETANK_API ATank : public APawn
 	GENERATED_BODY()
 
 private:
-	UPROPERTY(EditAnywhere, Category = Firing)
+	UPROPERTY(EditDefaultsOnly, Category = Firing)
 	float LaunchSpeed = 4000; //Sensible value of 1000 m/s
 
-	UPROPERTY(EditAnywhere, Category = Setup)
+	UPROPERTY(EditDefaultsOnly, Category = Firing)
+	float ReloadTime = 3.0f;
+
+	UPROPERTY(EditDefaultsOnly, Category = Setup)
 	TSubclassOf<AProjectile> ProjectileBlueprint;
 
 	UTankBarrel *Barrel = nullptr;
-
-	float ReloadTime = 3.0f;
 
 	double LastFireTime = 0;
 
