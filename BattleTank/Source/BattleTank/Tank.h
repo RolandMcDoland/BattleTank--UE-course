@@ -18,7 +18,7 @@ class BATTLETANK_API ATank : public APawn
 
 private:
 	UPROPERTY(EditAnywhere, Category = Firing)
-	float LaunchSpeed = 100000; //Sensible value of 1000 m/s
+	float LaunchSpeed = 4000; //Sensible value of 1000 m/s
 
 	UPROPERTY(EditAnywhere, Category = Setup)
 	TSubclassOf<AProjectile> ProjectileBlueprint;
