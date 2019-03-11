@@ -8,7 +8,7 @@
 
 class UProjectileMovementComponent;
 
-UCLASS()
+UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class BATTLETANK_API AProjectile : public AActor
 {
 	GENERATED_BODY()
