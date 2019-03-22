@@ -5,10 +5,14 @@
 
 void UTankMovementComponent::IntendMoveForward(float Throw)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Intend move forward throw: %f"), Throw)
-
 	LeftTrack->setThrottle(Throw);
 	RightTrack->setThrottle(Throw);
+}
+
+void UTankMovementComponent::IntendTurnRight(float Throw)
+{
+	LeftTrack->setThrottle(Throw);
+	RightTrack->setThrottle(-Throw);
 }
 
 void UTankMovementComponent::Initialise(UTankTrack * LeftTrackToSet, UTankTrack * RightTrackToSet)
